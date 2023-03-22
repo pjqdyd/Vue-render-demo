@@ -2,6 +2,10 @@
 
 ### 使用slot和h函数(createElement方法)执行render方法渲染元素
 
+#### 环境：
+> vue-cli4 <br/>
+> vue 2.6+
+
 #### 参考简书文章：[Vue使用slot和h函数执行render方法渲染元素](https://www.jianshu.com/p/25b9fef6492e?v=1679330554364)
 
 #### Project setup

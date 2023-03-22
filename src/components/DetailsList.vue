@@ -41,12 +41,13 @@
               data: Object,
           },
           render(h) { // 使用组件自带的render方法提供h函数 (createElement)
+            // const h = this.$createElement; // 也可直接获取h函数
             let renderH = this.opt.renderH
             if (typeof renderH === 'function') {
               return renderH(h, this.data[this.opt.prop], this.data)
             }
           },
-          // renderError (h, err) {
+          // renderError (h, err) { // 渲染出错的提示组件
           //   return h('pre', { style: { color: 'red' }}, err.stack)
           // }
       }

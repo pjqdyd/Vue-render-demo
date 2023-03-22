@@ -58,6 +58,7 @@ export default {
           label: '手机:',
           prop: 'phone', // 使用h函数渲染
           renderH: (h, value, data) => {
+            // const h = this.$createElement; //  不使用子组件ComponentRender组件的render函数，也可直接获取h函数来执行渲染
             const address = data.address || '未知';
             return h('div', {
               class: 'phone',
